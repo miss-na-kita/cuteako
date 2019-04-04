@@ -9,7 +9,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".LoginChecker">
+    tools:context=".LoginChecker"
+
+    android:background="@drawable/grad_bg" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/imgView_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="180dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/checkit" />
+
+    </RelativeLayout>
 
     <!-- Login progress -->
     <ProgressBar
@@ -22,13 +40,15 @@
 
     <ScrollView
         android:id="@+id/login_form"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:id="@+id/email_login_form"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="275dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
             android:orientation="vertical">
 
             <android.support.design.widget.TextInputLayout
@@ -65,12 +85,14 @@
             </android.support.design.widget.TextInputLayout>
 
             <Button
-                android:id="@+id/email_sign_in_button"
+                android:id="@+id/BtnLogin"
                 style="?android:textAppearanceSmall"
-                android:layout_width="match_parent"
+                android:layout_width="141dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
                 android:layout_marginTop="16dp"
-                android:text="@string/action_sign_in"
+                android:background="@drawable/et_bg"
+                android:text="Login"
                 android:textStyle="bold" />
 
         </LinearLayout>

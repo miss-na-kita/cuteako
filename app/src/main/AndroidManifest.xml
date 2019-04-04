@@ -17,6 +17,9 @@
         <activity
             android:name=".LoginChecker"
             android:label="@string/title_activity_login_checker"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
