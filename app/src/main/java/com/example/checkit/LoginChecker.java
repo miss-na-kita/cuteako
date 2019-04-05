@@ -63,22 +63,12 @@ public class LoginChecker extends AppCompatActivity implements LoaderCallbacks<C
     private View mProgressView;
     private View mLoginFormView;
 
-    private Button BtnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_checker);
 
-        BtnLogin = findViewById(R.id.BtnLogin);
-
-        BtnLogin.setOnClickListener(new View.OnClickListener()
-        {   @Override
-        public void onClick(View v)
-        {   openBtnLogin();
-
-        }
-        });
 
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
@@ -109,11 +99,6 @@ public class LoginChecker extends AppCompatActivity implements LoaderCallbacks<C
 
     }
 
-    public void openBtnLogin()
-    {
-        Intent intent = new Intent(this, Home.class);
-        startActivity(intent);
-    }
 
     private void populateAutoComplete() {
         if (!mayRequestContacts()) {
