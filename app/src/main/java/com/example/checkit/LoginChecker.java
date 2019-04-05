@@ -3,6 +3,7 @@ package com.example.checkit;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -62,10 +63,23 @@ public class LoginChecker extends AppCompatActivity implements LoaderCallbacks<C
     private View mProgressView;
     private View mLoginFormView;
 
+    private Button BtnLogin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_checker);
+
+        BtnLogin = findViewById(R.id.BtnLogin);
+
+        BtnLogin.setOnClickListener(new View.OnClickListener()
+        {   @Override
+        public void onClick(View v)
+        {   openBtnLogin();
+
+        }
+        });
+
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
@@ -92,6 +106,13 @@ public class LoginChecker extends AppCompatActivity implements LoaderCallbacks<C
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+
+    }
+
+    public void openBtnLogin()
+    {
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
     }
 
     private void populateAutoComplete() {
@@ -160,7 +181,7 @@ public class LoginChecker extends AppCompatActivity implements LoaderCallbacks<C
         View focusView = null;
 
         // Check for a valid password, if the user entered one.
-        if (!TextUtils.isEmpty(password)) {
+        if (TextUtils.isEmpty(password)) {
             mPasswordView.setError(getString(R.string.error_field_required));
             focusView = mPasswordView;
             cancel = true;
