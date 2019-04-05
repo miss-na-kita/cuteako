@@ -207,7 +207,7 @@ public class LoginChecker extends AppCompatActivity implements LoaderCallbacks<C
 
     private boolean isPasswordValid(String password) {
         //TODO: Replace this with your own logic
-        return password.length() > 6;
+        return password.length() > 5;
     }
 
     /**
@@ -343,7 +343,8 @@ public class LoginChecker extends AppCompatActivity implements LoaderCallbacks<C
             showProgress(false);
 
             if (success) {
-                finish();
+                Intent homeIntent = new Intent (LoginChecker.this, Home.class);
+                startActivity(homeIntent);
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();

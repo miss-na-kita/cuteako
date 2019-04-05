@@ -11,7 +11,7 @@
         <item
             android:id="@+id/nav_reports"
             android:icon="@drawable/ic_reports"
-            android:title="Home" />
+            android:title="Reports" />
     </group>
 
     <item android:title="About Me">
@@ -41,7 +41,7 @@
             <item
                 android:id="@+id/nav_setting"
                 android:icon="@drawable/ic_settings"
-                android:title="Message" />
+                android:title="Settings" />
             <item
                 android:id="@+id/nav_logout"
                 android:icon="@drawable/ic_logout"
