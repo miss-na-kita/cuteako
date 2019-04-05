@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +12,7 @@
         android:text="ROOM SCHEDULES"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp" />
-    <?xml version="1.0" encoding="utf-8"?>
+
 
     <Button
         android:id="@+id/Room301"
@@ -22,8 +23,8 @@
         android:layout_marginEnd="288dp"
         android:layout_marginBottom="620dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 301"/>
+        android:text="Room 301"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
 
@@ -35,8 +36,8 @@
         android:layout_marginEnd="290dp"
         android:layout_marginBottom="560dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 302" />
+        android:text="Room 302"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room303"
@@ -47,8 +48,8 @@
         android:layout_marginEnd="290dp"
         android:layout_marginBottom="500dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 303" />
+        android:text="Room 303"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room304"
@@ -59,8 +60,8 @@
         android:layout_marginEnd="290dp"
         android:layout_marginBottom="440dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 304" />
+        android:text="Room 304"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room305"
@@ -71,8 +72,8 @@
         android:layout_marginEnd="290dp"
         android:layout_marginBottom="380dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 305" />
+        android:text="Room 305"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room306"
@@ -83,8 +84,8 @@
         android:layout_marginEnd="290dp"
         android:layout_marginBottom="320dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 306" />
+        android:text="Room 306"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room307"
@@ -95,8 +96,8 @@
         android:layout_marginEnd="290dp"
         android:layout_marginBottom="260dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 307" />
+        android:text="Room 307"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room308"
@@ -107,8 +108,8 @@
         android:layout_marginEnd="290dp"
         android:layout_marginBottom="200dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 308" />
+        android:text="Room 308"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room309"
@@ -119,8 +120,8 @@
         android:layout_marginEnd="290dp"
         android:layout_marginBottom="140dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 309" />
+        android:text="Room 309"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room310"
@@ -131,8 +132,8 @@
         android:layout_marginEnd="290dp"
         android:layout_marginBottom="80dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 310" />
+        android:text="Room 310"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room311"
@@ -143,8 +144,8 @@
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="620dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 311" />
+        android:text="Room 311"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room312"
@@ -155,8 +156,8 @@
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="560dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 312" />
+        android:text="Room 312"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room313"
@@ -167,8 +168,8 @@
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="500dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 313" />
+        android:text="Room 313"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room314"
@@ -179,8 +180,8 @@
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="440dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 314" />
+        android:text="Room 314"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room315"
@@ -191,8 +192,8 @@
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="380dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 315" />
+        android:text="Room 315"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room316"
@@ -203,8 +204,8 @@
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="320dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 316" />
+        android:text="Room 316"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room317"
@@ -215,8 +216,8 @@
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="260dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 317" />
+        android:text="Room 317"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/Room318"
@@ -227,6 +228,6 @@
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="200dp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Room 318" />
+        android:text="Room 318"
+        android:textColor="@color/colorPrimaryDark" />
 </RelativeLayout>

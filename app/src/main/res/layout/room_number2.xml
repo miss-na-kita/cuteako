@@ -11,6 +11,6 @@
         android:id="@+id/RoomNumber"
         android:padding="5dp"
         android:text="Room Schedule"
-        android:textColor="black"
+        android:textColor="@color/colorPrimaryDark"
         />
 </LinearLayout>
