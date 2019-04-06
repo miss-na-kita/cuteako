@@ -1,5 +1,6 @@
 package com.example.checkit;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -8,14 +9,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ExpandableListView;
 
 
 public class RoomSchedules extends Fragment {
 
-     private Button Room301;
 
-     @Override
+
+    ExpandableListView expandableTextView;
+
+    @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        expandableTextView = view.findViewById(R.id.rooms);
+        ExpandableRoomNumber adapter = new ExpandableRoomNumber(RoomSchedules.this);
+        expandableTextView.setAdapter(adapter);
+
+        return view;
     }
+
 }

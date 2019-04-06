@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    android:background="@drawable/grad_bg">
+    android:background="@drawable/grad_bg"
+    tools:context=".MainActivity2">
 
     <ExpandableListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/RoomNumber"
-        android:padding="5dp"/>
+        android:id="@+id/rooms"
+        android:padding="5dp">
+    </ExpandableListView>
 
 
 

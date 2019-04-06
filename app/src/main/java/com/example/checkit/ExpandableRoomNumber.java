@@ -1,6 +1,7 @@
 package com.example.checkit;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -81,13 +82,21 @@ public class ExpandableRoomNumber extends BaseExpandableListAdapter {
             convertView=inflater.inflate(R.layout.room_number,null);
         }
         TextView roomnumber2=convertView.findViewById(R.id.RoomNumber);
-
-        return null;
+        roomnumber2.setTypeface(null, Typeface.BOLD);
+        roomnumber2.setText(roomnumber);
+        return convertView;
     }
 
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-        return null;
+        final String scheduleFaq = (String)getChild(groupPosition, childPosition);
+        if (convertView==null){
+            LayoutInflater inflater=(LayoutInflater)this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView=inflater.inflate(R.layout.room_number,null);
+        }
+        TextView schedule=convertView.findViewById(R.id.RoomNumber);
+        schedule.setText(scheduleFaq);
+        return convertView;
     }
 
     @Override
